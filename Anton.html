@@ -1,0 +1,52 @@
+<meta charset="utf-8" />
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+ <div class= "question1" style="background-color: yellow; height: 700px; width: 800px; margin-left: 500px">
+    <h1>Угадай мой любимый цвет</h1>
+    <div class="answer1" style="width: 800px; height: 100px; background-color: red; font-size: 40px">
+        черный
+    </div>
+    <div class="answer2" style="width: 800px; height: 100px; background-color: green;font-size: 40px">
+        белый
+    </div>
+    <div class="answer3" style="width: 800px; height: 100px; background-color: blue;font-size: 40px">
+        синий
+    </div>
+</div>
+
+<div class="question2" style="background-color: yellow; height: 800px; width: 800px; margin-left: 500px;display:none ;">
+    <img src="4.jpg" style="width: 800px; height: 200px">
+    <h1>угадай мой любимый вид спорта</h1>
+    <div class="answer1" style="width: 800px; height: 150px; background-color: #8356b8; font-size: 40px">
+        баскетбол
+    </div>
+    <div class="answer2" style="width: 800px; height: 150px; background-color: red;font-size: 40px">
+        футбол
+    </div>
+    <div class="answer3" style="width: 800px; height: 150px; background-color: green;font-size: 40px">
+        плаванье
+    </div>
+</div>
+<div class="question3" style="background-color: #8a2025; height: 900px; width: 800px; margin-left: 500px;display:none">
+    <img src="https://k3y.ru/wp-content/uploads/2019/07/EGS.jpg" style="width: 800px; height: 300px"/>
+    <h1>Угадай мою любимую игру</h1>
+    <div class="answer1" style="width: 800px; height: 200px; background-color: #8356b8; font-size: 40px">
+        <iframe width="560"height="200" src="https://www.youtube.com/embed/ai3o0XtrnM8"frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+    </div>
+    <div class="answer2" style="width: 800px; height: 200px; background-color: red;font-size: 40px">
+        <iframe width="560" height="200" src="https://www.youtube.com/embed/9FCRaSwU3W8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="answer3" style="width: 800px; height: 200px; background-color: green;font-size: 40px">
+        <iframe width="560" height="200" src="https://www.youtube.com/embed/q4GdJVvdxss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+    </div>
+</div>
+<script>
+    find("question1 answer1").click ("alert","неправильно")
+    find("question1 answer2").click ("alert", "неправильно")
+    find("question1 answer3").click ("show", "question2", "правильно")
+    find("question2 answer1").click ("show","question3", "правильно")
+    find("question2 answer2").click ("alert","неправильно")
+    find("question2 answer3").click ("alert","неправильно")
+    find("question3 answer1").click ("alert","неправильно")
+    find("question3 answer2").click ("alert","неправильно")
+    find("question3 answer3").click ("alert","правильно")
+</script>
